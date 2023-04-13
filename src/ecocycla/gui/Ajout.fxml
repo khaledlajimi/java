@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Font?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" styleClass="hypertext-design" stylesheets="@design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecocycla.gui.AjoutController">
+     <children>
+     
+      <Label layoutX="136.0" layoutY="79.0" text="Ecocycla " textAlignment="CENTER" textFill="#181156" />
+      <TextField fx:id="fxprenom" layoutX="76.0" layoutY="170.0" prefHeight="26.0" prefWidth="222.0" promptText="Prenom..." styleClass="textfield-design" stylesheets="@design.css">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></TextField>
+        <TextField fx:id="fxnom" layoutX="76.0" layoutY="210.0" prefHeight="26.0" prefWidth="222.0" promptText="Nom...." styleClass="textfield-design" stylesheets="@design.css">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="fxemail" layoutX="77.0" layoutY="250.0" prefHeight="26.0" prefWidth="222.0" promptText="Email.." styleClass="textfield-design">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="fxcin" layoutX="76.0" layoutY="290.0" prefHeight="26.0" prefWidth="222.0" promptText="CIN..." styleClass="textfield-design">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="fxnum" layoutX="76.0" layoutY="330.0" prefHeight="26.0" prefWidth="222.0" promptText="Numéro de Télephone ..." styleClass="textfield-design">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="fxadresse" layoutX="76.0" layoutY="370.0" prefHeight="26.0" prefWidth="222.0" promptText="Adresse" styleClass="textfield-design">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="fxroles" layoutX="77.0" layoutY="410.0" prefHeight="26.0" prefWidth="221.0" promptText="Roles..." styleClass="textfield-design">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>  
+      <Button fx:id="btnaj" layoutX="106.0" layoutY="500.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="30.0" prefWidth="174.0" styleClass="button-design" text="Ajouter " textFill="#0a145b">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></Button>
+            
+         </children>
+</AnchorPane>

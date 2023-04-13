@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.AdminController">
+   <children>
+      <Button fx:id="btndeconnexion" cache="true" contentDisplay="CENTER" depthTest="DISABLE" layoutX="478.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="107.0" styleClass="exit" stylesheets="@design.css" text="Déconnexion" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Dubai Light" size="14.0" />
+         </font>
+         <cursor>
+           
+         </cursor>
+      </Button>
+      <TableView fx:id="tableviewUser" layoutX="13.0" layoutY="59.0" prefHeight="300.0" prefWidth="676.0" stylesheets="@design.css">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="36.00006103515625" text="ID" />
+          <TableColumn fx:id="Nom" prefWidth="83.20001220703125" text="Nom :" />
+            <TableColumn fx:id="prenom" prefWidth="70.4000244140625" text="Prénom :" />
+            <TableColumn fx:id="email" prefWidth="79.20001220703125" text="Email :" />
+            <TableColumn fx:id="cin" prefWidth="70.4000244140625" text="CIN :" />
+            <TableColumn fx:id="region" prefWidth="92.00006103515625" text="region " />
+            <TableColumn fx:id="adresse" prefWidth="78.4000244140625" text="Adresse : " />
+            <TableColumn fx:id="roles" prefWidth="58.39999999999998" text="Roles : " />
+            <TableColumn fx:id="datenaissance" prefWidth="78.4000244140625" text="datenaissance" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnsupprimer" layoutX="569.0" layoutY="372.0" mnemonicParsing="false" onAction="#suprimer" prefHeight="26.0" prefWidth="107.0" styleClass="exit" stylesheets="@design.css" text="Supprimer " textFill="#e7dfdf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnmodifier" layoutX="424.0" layoutY="372.0" mnemonicParsing="false" onAction="#modifier" prefHeight="26.0" prefWidth="107.0" styleClass="button-design" stylesheets="@design.css" text="Modifier " textFill="#d4caca">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="actualiser" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#showRec" prefHeight="26.0" prefWidth="130.0" styleClass="button-design" stylesheets="@design.css" text="Actualiser" textAlignment="CENTER" textFill="#f2e0e0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      
+      <Button fx:id="btnajouter" layoutX="60.0" layoutY="374.0" mnemonicParsing="false" onAction="#ajouter" styleClass="hypertext-design" text="ajouter" />
+   </children>
+</AnchorPane>
